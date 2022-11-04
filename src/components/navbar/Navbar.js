@@ -12,8 +12,14 @@ const Navbar = () => {
     const navigate = useNavigate();
     const goto = () => {
     navigate("/Sign");
-
+    // const navigate = useNavigate();
+ 
   };
+  const log = () => {
+    navigate("/Login");
+  
+};
+  
 
   
     const[click, setClick] = useState(false)
@@ -24,6 +30,7 @@ const Navbar = () => {
             <div className='container'>
                 <h1><span><BsFillHouseFill />Real</span>Estate</h1>
                 <button className='btn' onClick={goto}>Sign In</button>
+                <button className='btn' onClick={log}>Login In</button>
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                     <Link to="/" className='li' ><a href='Home'>Home</a></Link>
                     <Link to="/Search" className='li'><a href='Search'>Search</a></Link>

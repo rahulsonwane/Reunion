@@ -8,6 +8,7 @@ import { Routes, Route } from "react-router-dom";
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import Home from "./components/home/Home"
+import Login from './components/Login/Login';
 import Search from './components/Search/Search';
 import Sign from './components/sign/Sign';
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route path="Contact" element={<Contact />} />
           <Route path="Search" element={<Search />} />
           <Route path="About" element={<About/>} />
+          <Route path="Login" element={<Login/>} />
         
 
 
@@ -29,7 +31,6 @@ function App() {
 
             {/* <Route path=":postId" element={<Detailes />} /> */}
 
-          
 
         </Route>
 
