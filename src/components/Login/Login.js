@@ -3,6 +3,7 @@ import Navbar from '../navbar/Navbar'
 import './Login.css'
 import { useNavigate } from "react-router-dom";
 
+
 function Login() {
     const navigate = useNavigate();
     const goto = () => {
@@ -36,6 +37,7 @@ function Login() {
 
 
                 </div>
+            
             </div>
             );
 
